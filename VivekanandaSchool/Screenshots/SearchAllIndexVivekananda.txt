@@ -1,0 +1,69 @@
+POST
+http://localhost:9200//vivekanandaschool/student/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+----------------------------------------
+JSON RESPONSE
+
+{
+  "took": 19,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "failed": 0
+  },
+  "hits": {
+    "total": 4,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "vivekanandaschool",
+        "_type": "student",
+        "_id": "3",
+        "_score": 1,
+        "_source": {
+          "name": "Sneha222",
+          "dob": "14-Dec-1995",
+          "XthPassYear": "2012"
+        }
+      },
+      {
+        "_index": "vivekanandaschool",
+        "_type": "student",
+        "_id": "2",
+        "_score": 1,
+        "_source": {
+          "name": "Sneha",
+          "dob": "14-Dec-1995",
+          "XthPassYear": "2012"
+        }
+      },
+      {
+        "_index": "vivekanandaschool",
+        "_type": "student",
+        "_id": "1",
+        "_score": 1,
+        "_source": {
+          "name": "Vidya",
+          "dob": "14-Nov-1995",
+          "XthPassYear": "2012"
+        }
+      },
+      {
+        "_index": "vivekanandaschool",
+        "_type": "student",
+        "_id": "4",
+        "_score": 1,
+        "_source": {
+          "name": "Samanvita",
+          "dob": "31-Dec-1996",
+          "Xthpassyear": "2012"
+        }
+      }
+    ]
+  }
+}
