@@ -1,0 +1,9 @@
+{
+  "name"         : "F1-Driver",
+  "version"      : "0.0.0",
+  "description"  : "F1-Driver application.",
+  "main"         : "server.js",
+  "author"       : "Anil",
+  "dependencies" : {
+  }
+}
